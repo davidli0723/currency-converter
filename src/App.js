@@ -73,12 +73,14 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-      <p>Select Date:</p>
+      <p>Current Converted Date: {date}</p>
       <DatePicker 
         selected={selectedDate}
         onChange={date => setSelectedDate(date)}
         dateFormat = 'yyyy-MM-dd'
+        minDate={new Date("1990-01-01")}
         maxDate={new Date()}
+        inline
       />
       </div>
     </>
