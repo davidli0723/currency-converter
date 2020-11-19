@@ -18,6 +18,7 @@ function App() {
   let date = moment(selectedDate).format("YYYY-MM-DD")
   
   BASE_URL = `https://openexchangerates.org/api/historical/${date}.json?app_id=cb1a41f02f59435aa4563c5b93815bcc`
+  
   let toAmount, fromAmount
   if (amountInFromCurrency){
     fromAmount = amount
